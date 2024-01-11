@@ -1,0 +1,78 @@
+{
+  "personal_info": {
+    "first_name": "Rares",
+    "last_name": "Munteanu",
+    "email": "raresmunteanu29@yahoo.com",
+    "mobile": "+40763277778",
+    "linkedin": "",
+    "description": "Passionate software developer with almost 6 years of experience in Python"
+  },
+  "experience": [
+    {
+      "position": "senior software engineer",
+      "start_year": 2022,
+      "end_year": null,
+      "company": "Lionstep",
+      "description": "Process of rearchitecture from monolith to microservices"
+    },
+    {
+      "position": "senior software engineer",
+      "start_year": 2018,
+      "end_year": 2022,
+      "company": "Bitdefender",
+      "description": "Implicated into process of vulnerability assessment"
+    }
+  ],
+  "education": [
+    {
+      "university": "Alexandru Ioan Cuza",
+      "degree": "master",
+      "start_date": "2020",
+      "end_date": "2022",
+      "grade": 9.50
+    },
+    {
+      "university": "Alexandru Ioan Cuza",
+      "degree": "licence",
+      "start_date": "2017",
+      "end_date": "2020",
+      "grade": 9.25
+    }
+  ],
+  "languages": [
+    {
+      "language": "english",
+      "level": "advanced"
+    },
+    {
+      "language": "deutsch",
+      "level": "beginner"
+    }
+  ],
+  "skills": [
+    {
+      "skill": "Python",
+      "level": "expert"
+    },
+    {
+      "skill": "Git",
+      "level": "expert"
+    },
+    {
+      "skill": "Flask",
+      "level": "advanced"
+    },
+    {
+      "skill": "SQL",
+      "level": "advanced"
+    },
+    {
+      "skill": "NoSQL",
+      "level": "advanced"
+    },
+    {
+      "skill": "microservices",
+      "level": "advanced"
+    }
+  ]
+}
