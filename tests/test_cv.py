@@ -1,5 +1,4 @@
 import pytest
-from flaskr import create_app
 from cv_parser.json_parser import JsonParser, JsonReadException
 from flaskr.utils import CV_JSON_PATH_1, CV_PDF_PATH_1
 

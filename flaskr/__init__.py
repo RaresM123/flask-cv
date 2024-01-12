@@ -13,7 +13,9 @@ def create_app(test_config=None):
     app.config.from_mapping(
         SECRET_KEY='dev',
         DEBUG=True,
+        JSONIFY_PRETTYPRINT_REGULAR=True
     )
+
     app.register_blueprint(bp)
     app.register_blueprint(cli_bp)
     cache.init_app(app)

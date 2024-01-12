@@ -13,7 +13,10 @@ bp = Blueprint('cv_info', __name__, url_prefix="/cv")
 @http_exception
 @validate()
 def get_cv():
-
+	"""
+	Route for retrieving all information from the cv
+	:return: json format response
+	"""
 	cached_json_parser = cache.get("cached_json_parser")
 	if not cached_json_parser:
 		json_parser = JsonParser(cv_path=CV_JSON_PATH_1)
@@ -34,6 +37,10 @@ def get_cv():
 @http_exception
 @validate()
 def get_personal_info():
+	"""
+	Route for retrieving personal information from the cv
+	:return: json format response
+	"""
 
 	cached_json_parser = cache.get("cached_json_parser")
 	if not cached_json_parser:
@@ -54,6 +61,10 @@ def get_personal_info():
 @http_exception
 @validate()
 def get_experience():
+	"""
+	Route for retrieving experience information from the cv
+	:return: json format response
+	"""
 
 	cached_json_parser = cache.get("cached_json_parser")
 	if not cached_json_parser:
@@ -75,6 +86,10 @@ def get_experience():
 @http_exception
 @validate()
 def get_education():
+	"""
+	Route for retrieving education information from the cv
+	:return: json format response
+	"""
 
 	cached_json_parser = cache.get("cached_json_parser")
 	if not cached_json_parser:
@@ -96,6 +111,10 @@ def get_education():
 @http_exception
 @validate()
 def get_languages():
+	"""
+	Route for retrieving languages information from the cv
+	:return: json format response
+	"""
 
 	cached_json_parser = cache.get("cached_json_parser")
 	if not cached_json_parser:
@@ -117,6 +136,10 @@ def get_languages():
 @http_exception
 @validate()
 def get_skills():
+	"""
+	Route for retrieving skills information from the cv
+	:return: json format response
+	"""
 
 	cached_json_parser = cache.get("cached_json_parser")
 	if not cached_json_parser:
@@ -132,8 +155,3 @@ def get_skills():
 		"status_code": 200,
 		"result": [serializer.SkillResponse(**s).model_dump() for s in cached_json_parser.skills]
 	}
-
-
-
-
-

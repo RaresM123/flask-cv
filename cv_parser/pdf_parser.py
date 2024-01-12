@@ -1,7 +1,6 @@
 from cv_parser.base_parser import BaseParser
 from resume_parser import resumeparse
 from cv_parser.exceptions.parser_read_exception import PdfReadException
-from pyresparser import ResumeParser
 
 
 class PdfParser(BaseParser):

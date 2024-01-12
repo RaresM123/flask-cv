@@ -4,7 +4,6 @@ from functools import wraps
 
 import click
 from pydantic import ValidationError
-from werkzeug.exceptions import HTTPException
 
 from cv_parser.exceptions.parser_read_exception import JsonReadException
 
@@ -44,6 +43,13 @@ def http_exception(fn):
 
 
 def commands_exception(fn):
+    """
+    A decorator that catches exceptions thrown by the decorated function,
+    logs the exception and return into a nice format the error appearing.
+
+    :param fn: The function to be decorated.
+    :return: A new function that wraps the original function and catches exceptions.
+    """
     @wraps(fn)
     def _wrapped(*args, **kwargs):
         try:

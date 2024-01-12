@@ -34,22 +34,3 @@ class JsonParser(BaseParser):
 
 	def get_experience(self):
 		self.experience = self.cv_content.get("experience", None)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
